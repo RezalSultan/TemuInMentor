@@ -4,6 +4,7 @@
 	font-family: "inter", "montserrat";
 	box-sizing: border-box;
 	color: #18181b;
+	/* border: 1px solid black; */
 }
 
 body {
@@ -27,16 +28,16 @@ h3 {
 	height: 100%;
 }
 
-/* left section */
+/* right section */
 
-.left {
+.right {
 	display: flex;
 	justify-content: center;
 	align-self: center;
 	background: linear-gradient(
-		270deg,
+		90deg,
 		#9dd6ff 49.92%,
-		rgba(157, 214, 255, 0.25) 100%
+		rgba(157, 214, 255, 0.40) 100%
 	);
 	width: 45%;
 	height: 55vw;
@@ -50,7 +51,7 @@ h3 {
 	cursor: pointer;
 }
 
-.content_left {
+.content_right {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -59,16 +60,38 @@ h3 {
 	padding: 180px 0;
 }
 
-.text_login {
+.text_daftar {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 0px;
 }
 
-/* right section */
+.link_daftar {
+	display: flex;
+	justify-content: center;
+	margin-top: 16px;
+	gap: 16px;
+}
 
-.right {
+.link_daftar a {
+	padding: 13px;
+	font-family: "Inter";
+	font-weight: 600;
+	font-size: 16px;
+	color: #a1a1aa;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.link_daftar a.active {
+	background-color: #00d9de;
+	color: #18181b;
+}
+
+/* left section */
+
+.left {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -78,7 +101,7 @@ h3 {
 	height: 100%;
 }
 
-.content_right {
+.content_left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -88,15 +111,9 @@ h3 {
 	padding: 40px 0;
 }
 
-.content_right img {
+.content_left img {
 	width: 250px;
 	height: 93.96px;
-}
-
-.alternative_login img {
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
 }
 
 .text_masuk {
@@ -199,53 +216,37 @@ form i {
 }
 
 /* Costum checkbox_box */
-.remember {
+.checkbox_p_k {
 	display: flex;
 	align-items: center;
 }
 
-.remember label {
+.label_p_k {
 	cursor: pointer;
-	display: flex;
-	gap: 8px;
+	margin-left: 8px;
+	width: 380px;
 	font-family: "Inter";
 	font-weight: 400;
 	font-size: 16px;
 	color: #52525b;
-	cursor: pointer;
 }
 
-.remember input[type="checkbox"] {
+.checkbox_p_k input[type="checkbox"] {
 	cursor: pointer;
 	opacity: 0;
 	position: absolute;
 }
 
-.remember label::before {
-	content: "";
-	width: 12px;
-	height: 12px;
-	border: 2px solid #003d3f;
-	border-radius: 3px;
-	transform: translateY(15%);
-}
-
-.remember .checkbox_box {
+.checkbox_p_k .checkbox_box {
+	cursor: pointer;
+	align-self: flex-start;
 	width: 12px;
 	height: 12px;
 	border: 2px solid #003d3f;
 	border-radius: 2px;
-	transform: translateY(-35%);
+	transform: translateY(35%);
 }
 /* --------------------------------- */
-
-.addition a {
-	text-decoration: none;
-	font-family: "Inter";
-	font-weight: 700;
-	font-size: 14px;
-	color: #003d3f;
-}
 
 /* long button */
 
@@ -307,7 +308,7 @@ form i {
 	border-radius: 2px;
 }
 
-.alternative_login {
+.alternative_daftar {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -315,18 +316,24 @@ form i {
 	margin-top: 16px;
 }
 
-.link_daftar {
+.alternative_daftar img {
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.link_masuk {
 	margin-top: 24px;
 }
 
-.link_daftar p {
+.link_masuk p {
 	font-family: "Inter";
 	font-weight: 400;
 	font-size: 14px;
 	color: #18181b;
 }
 
-.link_daftar span {
+.link_masuk span {
 	font-family: "Inter";
 	font-weight: 700;
 	font-size: 14px;

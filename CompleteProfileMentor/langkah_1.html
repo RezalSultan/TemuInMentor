@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Complete Profile Mentor - Profile Anda</title>
+   <link rel="stylesheet" href="style_langkah1.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+   <div class="container">
+      <h1>Lengkapi Profile Mentor</h1><br>
+      <img src="img/ruler.svg">
+      <h2>LANGKAH 1 DARI 3</h2>
+      <p>Kolom yang wajib diisi ditandai dengan *</p>
+      <br>
+      <br>
+      <h2>Tentang Anda</h2><br>
+      <p>Foto Profil</p><br>
+      <img src="img/fp.svg">
+      <div class="profil"></div>
+      <form action="">
+         <div class="nama">
+            <label for="nama">Nama Depan *</label>
+            <div class="input_nama">
+               <input type="text" name="nama" id="nama" placeholder="Nama Depan...">
+            </div>
+         </div>
+         <label for="nama">Nama Belakang *</label>
+         <div class="input_nama">
+            <input type="text" name="nama" id="nama" placeholder="Nama belakang...">
+         </div>
+         <div class="jk">
+            <label for="jk">Jenis Kelamin*</label>
+            <div class="input_jk">
+               <input type="checkbox" name="laki-laki" id="laki-laki">Laki-laki
+               <input type="checkbox" name="perempuan" id="perempuan">Perempuan
+            </div>
+            <div class="tgl">
+               <label for="tgl">Tanggal Lahir *</label>
+               <div class="input_tgl">
+                  <input type="date" name="tgl">
+               </div>
+               <div class="provinsi">
+                  <label for="provinsi">Provinsi *</label>
+                  <div class="input_provinsi">
+                     <input type="text" name="provinsi" id="provinsi" placeholder="Provinsi...">
+                  </div>
+               </div>
+               <label for="kota">Kota *</label>
+               <div class="input_kota">
+                  <input type="text" name="kota" id="kota" placeholder="Kota...">
+               </div>
+               <div>
+                  <label for="alamat">Alamat *</label>
+                  <div class="input_alamat">
+                     <input type="text" name="alamat" id="alamat" placeholder="Alamat...">
+                  </div>
+                  <div class="telp">
+                     <label for="telp">No Telp *</label>
+                     <div class="input_telp">
+                        <input type="text" name="telp" id="telp">
+                     </div>
+                     <button class="button_kembali" type="button" name="button_kembali"
+                        id="button_kembali">Kembali</button>
+                     <button class="button_next" type="button" name="button_next" id="button_next">Lanjutkan</button>
+      </form>
+   </div>
+</body>
+
+</html>
