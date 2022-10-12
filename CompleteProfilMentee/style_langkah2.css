@@ -110,7 +110,7 @@ form {
 }
 
 
-.pekerjaan, .bidang{
+.pendidikan, .minat{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -122,11 +122,11 @@ form {
 	
 }
 
-.pekerjaan span, .bidang span{
+.pendidikan span, .minat span{
 	color: red;
 }
 
-.input_pekerjaan, .input_bidang {
+.input_pendidikan, .input_minat {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -134,7 +134,7 @@ form {
 	position: relative;
 }
 
-.input_pekerjaan input, .input_bidang input{
+.input_pendidikan input, .input_minat input{
 	width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
@@ -181,71 +181,6 @@ form {
 	gap: 100px;
 }
 
-.sertifikat{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 19px;
-	color: #18181B;
-	margin-top: 50px;
-}
-
-.portofolio{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 19px;
-	color: #18181B;
-	margin-top: 10px;
-}
-
-.sertifikat input, .portofolio input{
-	width: 156px;
-	height: 42px;
-	opacity: 0;
-	position: absolute;
-	cursor: pointer;
-}
-
-.input_sertifikat, .input_portofolio{
-
-	display: flex;
-	position: relative;
-	margin-top: 8px;
-}
-
-.icon2{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	content: "";
-	width: 156px;
-	height: 45px;
-	border-radius: 10px;
-	background-color:#0A9396;
-	
-}
-
-.icon2 i{
-	color: #fafafa;
-}
-
-.icon2 p{
-	color: #fafafa;
-	width: 104px;
-	height: 22px;
-	font-size: 16px;
-	line-height: 22px;
-	margin-left: 10px;
-}
 
 .button {
 	display: flex;

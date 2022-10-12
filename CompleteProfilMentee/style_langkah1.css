@@ -11,7 +11,6 @@ body {
 	background-color: #afaaaa;
 }
 
-
 .container {
 	width: 100%;
 	height: 100%;
@@ -19,6 +18,7 @@ body {
 	top: 0px;	
 	background-color: #afaaaa;
 }
+
 .container span{
 	color: red;
 }
@@ -46,7 +46,6 @@ body {
 	line-height: 17px;
 	color: #18181B;
 }
-
 .wrapper h2{
 	width: 233px;
 	height: 29px;
@@ -110,7 +109,7 @@ form {
 }
 
 
-.pekerjaan, .bidang{
+.nama, .provinsi, .wali, .nowali {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -119,14 +118,12 @@ form {
 	width: 824px;
 	height: 72px;
 	margin-top: 16px;
-	
 }
 
-.pekerjaan span, .bidang span{
+.nama span, .jk span, .tgl span, .provinsi span, .kota span, .alamat span, .telp span, .wali span, .nowali span {
 	color: red;
 }
-
-.input_pekerjaan, .input_bidang {
+.input_nama, .input_tgl, .input_alamat, .input_kota, .input_provinsi, .input_telp, .input_wali, .input_nowali {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -134,7 +131,7 @@ form {
 	position: relative;
 }
 
-.input_pekerjaan input, .input_bidang input{
+.input_nama input, .input_provinsi input, .input_kota input, .input_wali input{
 	width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
@@ -147,7 +144,34 @@ form {
 	color: #18181b; 
 }
 
-.deskripsi{
+.jk{
+	display: flex;
+	flex-direction: column;
+	margin-top: 16px;
+}
+
+.input_jk{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.jenis_kelamin{
+	display: flex;
+	gap: 8px;
+}
+
+.jenis_kelamin span{
+	color: #18181b;
+}
+
+.jenis_kelamin :nth-child(3){
+	margin-left: 24px;
+}
+
+
+.tgl {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -156,96 +180,110 @@ form {
 	width: 824px;
 	height: 72px;
 	margin-top: 16px;
-	
 }
 
-.input_deskripsi {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	gap: 8px;
-	padding: 0px;
-}
-
-.input_deskripsi input {
-	width: 800px;
-	height: 80px;
-	padding: 40px 10px;
+.input_tgl input {
+	width: 400px;
+	height: 45px;
+	padding: 0 24px 0 8px;
 	background: #e5fcf6;
 	border: 2px solid #003d3f;
 	border-radius: 10px;
 	font-family: inter;
 	font-size: 16px;
 	font-weight: 400;
-	color: #18181b;
-	gap: 100px;
 }
 
-.sertifikat{
+.alamat {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 19px;
-	color: #18181B;
-	margin-top: 50px;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	width: 824px;
+	height: 72px;
 }
 
-.portofolio{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 19px;
-	color: #18181B;
-	margin-top: 10px;
-}
-
-.sertifikat input, .portofolio input{
-	width: 156px;
-	height: 42px;
-	opacity: 0;
-	position: absolute;
-	cursor: pointer;
-}
-
-.input_sertifikat, .input_portofolio{
-
-	display: flex;
-	position: relative;
-	margin-top: 8px;
-}
-
-.icon2{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	content: "";
-	width: 156px;
+.input_alamat input{
+	width: 824px;
 	height: 45px;
+	padding: 0 24px 0 8px;
+	background: #e5fcf6;
+	border: 2px solid #003d3f;
 	border-radius: 10px;
-	background-color:#0A9396;
-	
-}
-
-.icon2 i{
-	color: #fafafa;
-}
-
-.icon2 p{
-	color: #fafafa;
-	width: 104px;
-	height: 22px;
+	font-family: inter;
 	font-size: 16px;
-	line-height: 22px;
-	margin-left: 10px;
+	font-weight: 400;
+	color: #18181b; 
 }
+
+.alamat {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	width: 824px;
+	height: 72px;
+	margin-top: 16px;
+}
+
+.input_alamat input{
+	width: 824px;
+	height: 45px;
+	padding: 0 24px 0 8px;
+	background: #e5fcf6;
+	border: 2px solid #003d3f;
+	border-radius: 10px;
+	font-family: inter;
+	font-size: 16px;
+	font-weight: 400;
+	color: #18181b; 
+}
+
+.telp,  .nowali{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	width: 824px;
+	height: 72px;
+	margin-top: 16px;
+}
+
+.input_telp input, .input_nowali input {
+	width: 400px;
+	height: 45px;
+	padding: 0 24px 0 86px;
+	gap: 40px;
+	background: #e5fcf6;
+	border: 2px solid #003d3f;
+	border-radius: 10px;
+	font-family: inter;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.id {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+	width: 100px;
+	height: 24px;
+	top: 37px;
+	left: 10px;
+}
+
+.id span{
+	padding: 0 24px 0 8px;
+	color: #18181B;
+	margin-top: 10px;	
+	transform: translateY(-5px);
+}
+
 
 .button {
 	display: flex;
