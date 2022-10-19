@@ -17,7 +17,11 @@ body {
 	left: 167px;
 	top: 0px;	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background: linear-gradient(90deg, #FAFAFA -7.05%, #9DD6FF 18.7%, #9DD6FF 81.22%, #FAFAFA 108.25%);
+=======
+	background-color: #afaaaa;
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 =======
 	background-color: #afaaaa;
 >>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
@@ -103,6 +107,7 @@ body {
 .icon i{
 	color: #fafafa;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 
 form {
@@ -113,7 +118,27 @@ form {
 	padding: 0px;
 }
 
-=======
+form label {
+	display: block;
+	font-family: inter;
+	font-size: 16px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #18181B;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	margin-top: 16px;
+	padding: 0px;
+}
+
+.input_nama {
+	position: relative;
+	margin-top: 8px;
 }
 
 form {
@@ -148,13 +173,19 @@ form {
 }
 
 .input_nama input, .input_provinsi input, .input_kota input {
+}
+
+.input_nama input, .input_provinsi input, .input_kota input {
 	width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background:  #F8FAFC;
 	border: 1px solid #003d3f;
 =======
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 	background: #e5fcf6;
 	border: 2px solid #003d3f;
 >>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
@@ -162,6 +193,7 @@ form {
 	font-family: inter;
 	font-size: 16px;
 	font-weight: 400;
+	color: #18181b; 
 	color: #18181b; 
 }
 
@@ -207,9 +239,12 @@ form {
 	height: 45px;
 	padding: 0 24px 0 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background:  #F8FAFC;;
 	border: 1px solid #003d3f;
 =======
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 	background: #e5fcf6;
 	border: 2px solid #003d3f;
 >>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
@@ -235,9 +270,12 @@ form {
 	height: 45px;
 	padding: 0 24px 0 8px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background:  #F8FAFC;
 	border: 1px solid #003d3f;
 =======
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 	background: #e5fcf6;
 	border: 2px solid #003d3f;
 >>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
@@ -245,7 +283,7 @@ form {
 	font-family: inter;
 	font-size: 16px;
 	font-weight: 400;
-	color: #18181b; 
+	color: #18181b;  
 }
 
 .telp {
@@ -265,9 +303,12 @@ form {
 	padding: 0 24px 0 86px;
 	gap: 40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background:  #F8FAFC;
 	border: 1px solid #003d3f;
 =======
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 	background: #e5fcf6;
 	border: 2px solid #003d3f;
 >>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b

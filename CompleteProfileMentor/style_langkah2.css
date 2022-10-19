@@ -12,6 +12,7 @@ body {
 }
 
 
+
 .container {
 	width: 100%;
 	height: 100%;
@@ -136,6 +137,9 @@ form {
 	align-items: flex-start;
 	gap: 8px;
 	position: relative;
+}
+
+.input_pekerjaan input, .input_bidang input{
 }
 
 .input_pekerjaan input, .input_bidang input{
