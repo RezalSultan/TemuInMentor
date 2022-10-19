@@ -11,6 +11,7 @@ body {
 	background-color: #afaaaa;
 }
 
+
 .container {
 	width: 100%;
 	height: 100%;
@@ -18,7 +19,6 @@ body {
 	top: 0px;	
 	background: linear-gradient(90deg, #FAFAFA -7.05%, #9DD6FF 18.7%, #9DD6FF 81.22%, #FAFAFA 108.25%);
 }
-
 .container span{
 	color: red;
 }
@@ -46,6 +46,7 @@ body {
 	line-height: 17px;
 	color: #18181B;
 }
+
 .wrapper h2{
 	width: 233px;
 	height: 29px;
@@ -108,7 +109,8 @@ form {
 	padding: 0px;
 }
 
-.nama, .provinsi {
+
+.pendidikan, .minat{
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -117,12 +119,14 @@ form {
 	width: 824px;
 	height: 72px;
 	margin-top: 16px;
+	
 }
 
-.nama span, .tgl span, .provinsi span, .kota span, .alamat span, .telp span {
+.pendidikan span, .minat span{
 	color: red;
 }
-.input_nama, .input_tgl, .input_alamat, .input_kota, .input_provinsi, .input_telp {
+
+.input_pendidikan, .input_minat {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -130,7 +134,7 @@ form {
 	position: relative;
 }
 
-.input_nama input, .input_provinsi input, .input_kota input {
+.input_pendidikan input, .input_minat input{
 	width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
@@ -143,121 +147,40 @@ form {
 	color: #18181b; 
 }
 
-.jk{
+.deskripsi{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	width: 824px;
+	height: 72px;
 	margin-top: 16px;
+	
 }
 
-.input_jk{
-	width: 400px;
+.input_deskripsi {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	gap: 8px;
+	padding: 0px;
 }
 
-.jenis_kelamin{
-	display: flex;
-	gap: 8px;
-}
-
-.jenis_kelamin span{
+.input_deskripsi input {
+	width: 800px;
+	height: 80px;
+	padding: 40px 10px;
+	background:  #F8FAFC;
+	border: 1px solid #003d3f;
+	border-radius: 10px;
+	font-family: inter;
+	font-size: 16px;
+	font-weight: 400;
 	color: #18181b;
+	gap: 100px;
 }
 
-.jenis_kelamin :nth-child(3){
-	margin-left: 24px;
-}
-
-.tgl {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 24px;
-	width: 824px;
-	height: 72px;
-	margin-top: 16px;
-}
-
-.input_tgl input {
-	width: 400px;
-	height: 45px;
-	padding: 0 24px 0 8px;
-	background:  #F8FAFC;;
-	border: 1px solid #003d3f;
-	border-radius: 10px;
-	font-family: inter;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.alamat {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 24px;
-	width: 824px;
-	height: 72px;
-	margin-top: 16px;
-}
-
-.input_alamat input{
-	width: 824px;
-	height: 45px;
-	padding: 0 24px 0 8px;
-	background:  #F8FAFC;
-	border: 1px solid #003d3f;
-	border-radius: 10px;
-	font-family: inter;
-	font-size: 16px;
-	font-weight: 400;
-	color: #18181b; 
-}
-
-.telp {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 24px;
-	width: 824px;
-	height: 72px;
-	margin-top: 16px;
-}
-
-.input_telp input {
-	width: 400px;
-	height: 45px;
-	padding: 0 24px 0 86px;
-	gap: 40px;
-	background:  #F8FAFC;
-	border: 1px solid #003d3f;
-	border-radius: 10px;
-	font-family: inter;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.id {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 0px;
-	width: 100px;
-	height: 24px;
-	top: 37px;
-	left: 10px;
-}
-
-.id span{
-	padding: 0 24px 0 8px;
-	color: #18181B;
-	margin-top: 10px;	
-	transform: translateY(-5px);
-}
 
 .button {
 	display: flex;
@@ -324,8 +247,4 @@ form {
 	box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
 	cursor: pointer;
-}
-
-a{
-	text-decoration: none;
 }
