@@ -47,12 +47,19 @@ h6 {
 	font-weight: 600;
 }
 
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
 /* navbar */
 .navbar_wrapper {
 	display: block;
 	height: 88px;
 	width: 100%;
 	box-shadow: 0px 3px 7px rgba(24, 24, 27, 0.15);
+   position: relative;
+   z-index: 2;
 }
 
 .navbar_content,
@@ -87,6 +94,10 @@ h6 {
 	font-size: 16px;
 }
 
+.nav_text .aktif{
+   background-color: #e5fcf6;
+}
+
 .nav_text p {
 	padding: 13px;
 	border-radius: 10px;
@@ -104,8 +115,12 @@ h6 {
 	transform: translateY(8%);
 }
 
-.nav_text_pm{
-   background-color: #E5FCF6;
+.nav_text .active{
+   background-color: #e5fcf6;
+}
+
+.nav_text_pm i.active {
+   transform: rotate(90deg);
 }
 
 .nav_text p:hover,
@@ -146,7 +161,115 @@ h6 {
 .button_daftar button:hover {
 	background-color: #00d9de;
 }
+
+/* dropdown program mentoring  */
+.wrapper_search_nav_pm {
+	width: 100%;
+   position: absolute;
+   z-index: 1;
+   background-color: #fafafa;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 0px 0px 10px 10px;
+}
+
+.toggle {
+   display: none;
+}
+
+.search_nav_pm {
+   display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+   justify-content: center;
+   padding: 32px 40px;
+	margin: 0 auto;
+	width: 1280px;
+   gap: 40px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir,
+.search_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir {
+   width: 280px;
+   flex-wrap: wrap;
+}
+
+.search_siswa {
+   display: flex;
+   gap: 40px;
+}
+
+.search_siswa h6{
+   color: #a1a1aa;
+   cursor: pointer;
+}
+
+.search_siswa h6.active{
+   color: #18181b;
+}
+
+.search_nav_pm p{
+   display: flex;
+   align-self: flex-start;
+   padding: 3px 5px;
+   border-radius: 2px;
+   font-family: "inter";
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.search_nav_pm p:hover{
+   background-color: #0a9396;
+   color: #F8FAFC;
+}
+
+.search_nav_pm span {
+   padding: 3px 5px;
+   color: #a1a1aa;
+}
+
+.content_nav_SD,
+.content_nav_SMP,
+.content_nav_karir,
+.content_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.content_nav_mahasiswa,
+.content_nav_SMA {
+   display: flex;
+   gap: 16px;
+}
+
+.content_nav_mahasiswa .left_mahasiswa,
+.content_nav_mahasiswa .right_mahasiswa,
+.content_nav_SMA .left_SMA,
+.content_nav_SMA .right_SMA{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.off {
+   display: none;
+}
+
+.on {
+   display: flex;
+}
 /* ------------------------------- */
+
 
 /* content */
 .main_wrapper {
@@ -185,8 +308,8 @@ h6 {
 	width: 100%;
 	height: 100%;
 	padding: 0 24px 0 56px;
-	background: #e5fcf6;
-	border: 2px solid #003d3f;
+	background: #f8fafc;
+	border: 1px solid #003d3f;
 	border-radius: 10px;
 	font-family: inter;
 	font-size: 16px;
@@ -380,7 +503,7 @@ h6 {
 }
 
 .star i {
-   color: #F8F336;
+   color: #FFD600;
 }
 
 .star_half {
@@ -394,7 +517,7 @@ h6 {
 
 .star_half .half {
    position: absolute;
-   color: #F8F336;
+   color: #FFD600;
    overflow: hidden;
    width: 8px;
 }
@@ -426,7 +549,7 @@ h6 {
 }
 
 .number_of_star i {
-   color: #F8F336;
+   color: #FFD600;
 }
 
 .parameter_half {
@@ -441,7 +564,7 @@ h6 {
    content: "";
    width: 140px;
    height: 16px;
-   background: #F8F336;
+   background: #FFD600;
    border-radius: 10px;
    position: absolute;
 }
@@ -485,7 +608,7 @@ h6 {
 }
 
 .reviews_wrapper .reviews:nth-child(even){
-   background-color: #F4F4F5;
+   background-color: #fafafa;
 }
 
 .reviews {
@@ -531,7 +654,7 @@ h6 {
 }
 
 .star_by_mentee i {
-   color: #F8F336;
+   color: #FFD600;
 }
 
 .star_by_mentee .four {
@@ -602,15 +725,12 @@ h6 {
 .right_content {
    width: 420px;
    height: 100%;
-   padding: 16px 0;
-   border: 2px solid #003d3f;
    border-radius: 10px;
 }
 
 .certificate {
    display: flex;
    gap: 16px;
-   margin-left: 32px;
    flex-direction: column;
 }
 
@@ -626,7 +746,6 @@ h6 {
 .portfolio {
    display: flex;
    gap: 16px;
-   margin-left: 32px;
    margin-top: 16px;
    flex-direction: column;
 }
@@ -667,7 +786,6 @@ h6 {
 
 .class_mentoring h4 {
    color: #0a9396;
-   padding-left: 32px;
 }
 
 .general_class {
@@ -680,6 +798,7 @@ h6 {
    transform: translateX(-2px);
    display: flex;
    flex-direction: column;
+   margin-bottom: 8px;
 }
 
 .spesific_class {
@@ -711,7 +830,7 @@ h6 {
 .info_class .reminder {
    margin-top: 4px;
    font-size: 12px;
-   color: #F83662;
+   color: #FF3427;
 }
 
 .info_class .reminder span {

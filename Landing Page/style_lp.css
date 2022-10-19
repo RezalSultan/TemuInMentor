@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+   font-family: "inter", "montserrat";
 	color: #18181b;
 	/* border: 1px solid red; */
 }
@@ -45,6 +46,18 @@ h5 {
 	font-size: 18px;
 	font-weight: 700;
 }
+
+h6 {
+	font-family: "montserrat";
+	font-size: 16px;
+	font-weight: 600;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
 .navbar_wrapper {
 	width: 100%;
 	box-shadow: 0px 3px 7px rgba(24, 24, 27, 0.15);
@@ -86,6 +99,10 @@ h5 {
 	font-size: 16px;
 }
 
+.nav_text .aktif{
+   background-color: #e5fcf6;
+}
+
 .nav_text p {
 	padding: 13px;
 	border-radius: 10px;
@@ -99,6 +116,14 @@ h5 {
 	border-radius: 10px;
 }
 
+.nav_text .active{
+   background-color: #e5fcf6;
+}
+
+.nav_text_pm i.active {
+   transform: rotate(90deg);
+}
+
 .nav_text_pm i {
 	transform: translateY(8%);
 }
@@ -108,6 +133,7 @@ h5 {
 	background-color: #e5fcf6;
 	cursor: pointer;
 }
+
 
 .nav_button {
 	gap: 24px;
@@ -140,6 +166,114 @@ h5 {
 
 .button_daftar button:hover {
 	background-color: #00d9de;
+}
+
+/* dropdown program mentoring  */
+.wrapper_search_nav_pm {
+	width: 100%;
+   position: fixed;
+   z-index: 9;
+   margin-top: -56px;
+   background-color: #fafafa;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 0px 0px 10px 10px;
+}
+
+.toggle {
+   display: none;
+}
+
+.search_nav_pm {
+   display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+   justify-content: center;
+   padding: 32px 40px;
+	margin: 0 auto;
+	width: 1280px;
+   gap: 40px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir,
+.search_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir {
+   width: 280px;
+   flex-wrap: wrap;
+}
+
+.search_siswa {
+   display: flex;
+   gap: 40px;
+}
+
+.search_siswa h6{
+   color: #a1a1aa;
+   cursor: pointer;
+}
+
+.search_siswa h6.active{
+   color: #18181b;
+}
+
+.search_nav_pm p{
+   display: flex;
+   align-self: flex-start;
+   padding: 3px 5px;
+   border-radius: 2px;
+   font-family: "inter";
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.search_nav_pm p:hover{
+   background-color: #0a9396;
+   color: #F8FAFC;
+}
+
+.search_nav_pm span {
+   padding: 3px 5px;
+   color: #a1a1aa;
+}
+
+.content_nav_SD,
+.content_nav_SMP,
+.content_nav_karir,
+.content_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.content_nav_mahasiswa,
+.content_nav_SMA {
+   display: flex;
+   gap: 16px;
+}
+
+.content_nav_mahasiswa .left_mahasiswa,
+.content_nav_mahasiswa .right_mahasiswa,
+.content_nav_SMA .left_SMA,
+.content_nav_SMA .right_SMA{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.off {
+   display: none;
+}
+
+.on {
+   display: flex;
 }
 
 /* ------------------------------- */
@@ -331,10 +465,15 @@ h5 {
    padding: 56px 0;
 }
 
-.content_siswaSD,
 .content_karir {
 	margin-right: 100px;
 	width: 40%;
+}
+
+.content_siswaSD {
+   margin-right: 100px;
+	width: 40%;
+   transform: translateY(-24px);
 }
 
 .content_siswaSD p.p1,
@@ -354,11 +493,26 @@ h5 {
 	gap: 88px;
 }
 
-.categori_kelas .tulisan_samar {
+.categori_kelas h2 {
 	color: #a1a1aa;
+   cursor: pointer;
+}
+
+.categori_kelas .active{
+   color: #18181b;
+}
+
+.siswa_sd .on{
+   display: flex;
+}
+
+.siswa_sd .off{
+   display: none;
 }
 
 .categori_SD,
+.categori_SMP,
+.categori_SMA,
 .categori_karir,
 .categori_mahasiswa,
 .categori_hobilifestyle {
@@ -370,7 +524,15 @@ h5 {
 	margin-top: 8px;
 }
 
+.categori_SD,
+.categori_SMP,
+.categori_SMA {
+   height: 100px;
+}
+
 .categori_SD p,
+.categori_SMP p,
+.categori_SMA p,
 .categori_karir p,
 .categori_mahasiswa p,
 .categori_hobilifestyle p {
@@ -386,6 +548,8 @@ h5 {
 }
 
 .categori_SD p:hover,
+.categori_SMP p:hover,
+.categori_SMA p:hover,
 .categori_karir p:hover,
 .categori_mahasiswa p:hover,
 .categori_hobilifestyle p:hover {
@@ -394,6 +558,8 @@ h5 {
 }
 
 .categori_SD span,
+.categori_SMP span,
+.categori_SMA span,
 .categori_karir span,
 .categori_mahasiswa span,
 .categori_hobilifestyle span {
