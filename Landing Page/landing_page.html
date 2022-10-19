@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   <link rel="stylesheet" href="style_lp.css">
+   <title>TemuIn Mentor</title>
+</head>
+
+<body>
+   <div class="container">
+      <!-- navbar -->
+      <nav class="navbar_wrapper">
+         <div class="navbar_content">
+            <a href="#"><img src="../Image/Logo.png" alt="logo"></a>
+            <div class="nav_content_wrapper">
+               <div class="nav_text">
+                  <a href="#"><p class="aktif">Beranda</p></a>
+                  <div class="nav_text_pm">
+                     <a href="../HalamanProgramanMentoring/program_mentoring.html"><span>Program Mentoring</span></a>
+                     <i class='bx bx-caret-right bx-sm'></i>
+                  </div>
+                  <a href="#tk"><p>Tentang Kami</p></a>
+                  <a href="#kontak"><p>Kontak</p></a>
+               </div>
+               <div class="nav_button">
+                  <div class="button_masuk">
+                     <a href="../HalamanLogin/login.html"><button>Masuk</button></a>
+                  </div>
+                  <div class="button_daftar">
+                     <a href="../DaftarMentee/daftar_mentee.html"><button>Daftar</button></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- menu program mentoring -->
+      <section id="pm" class="wrapper_search_nav_pm toggle">
+         <div class="search_nav_pm">
+            <div class="search_nav_siswa">
+               <h5>Siswa</h5>
+               <div class="search_siswa">
+                  <h6 class="active">SD</h6>
+                  <h6 >SMP</h6>
+                  <h6 >SMA</h6>
+               </div>
+               <div class="content_nav_SD on">
+                  <p>Matematika</p>
+                  <p>Bahasa Indonesia</p>
+                  <p>IPA</p>
+                  <P>Akademik</P>
+                  <p>Non-Akademik</p>
+                  <span>Coomingsoon...</span>
+               </div>
+               <div class="content_nav_SMP off">
+                  <p>Matematika</p>
+                  <p>Bahasa Inggris</p>
+                  <p>Bahasa Indonesia</p>
+                  <p>IPA</p>
+                  <p>Akademik</p>
+                  <p>Non-Akademik</p>
+                  <span>Coomingsoon...</span>
+               </div>
+               <div class="content_nav_SMA off">
+                  <div class="left_SMA">
+                     <p>Matematika</p>
+                     <p>Bahasa Inggris</p>
+                     <p>Bahasa Indonesia</p>
+                     <p>Ekonomi</p>
+                     <p>Akutansi</p>
+                     <p>Kimia</p>
+                     <p>Fisika</p>
+                     <p>Biologi</p>
+                     <p>Akademik</p>
+                  </div>
+                  <div class="right_SMA">
+                     <p>Non-Akademik</p>
+                     <p>Kedinasan</p>
+                     <p>OTW Kuliah</p>
+                     <span>Coomingsoon...</span>
+                  </div>
+               </div>
+            </div>
+            <div class="search_nav_mahasiswa">
+               <h5>Mahasiswa</h5>
+               <div class="content_nav_mahasiswa">
+                  <div class="left_mahasiswa">
+                     <p>Teknik</p>
+                     <p>Teknologi Informasi</p>
+                     <p>Kehutanan</p>
+                     <p>Pertanian</p>
+                     <P>Sosial</P>
+                     <p>Ekonomi & Bisnis</p>
+                     <p>Kesehatan</p>
+                     <p>Psikolog</p>
+                     <p>Science</p>
+                     <p>Matematika</p>
+                  </div>
+                  <div class="right_mahasiswa">
+                     <p>Akademik</p>
+                     <p>Non-Akademik</p>
+                     <span>Coominsoon...</span>
+                  </div>
+               </div>
+            </div>
+            <div class="search_nav_karir">
+               <h5>Karir</h5>
+               <div class="content_nav_karir">
+                  <p>Bisnis</p>
+                  <p>Sales Marketing</p>
+                  <p>Teknologi dan Sofware</p>
+                  <p>Desain</p>
+                  <P>Multimedia</P>
+                  <p>Finance</p>
+                  <p>Data Science</p>
+                  <span>Coomingsoon...</span>
+               </div>
+            </div>
+            <div class="search_nav_hobilifestyle">
+               <h5>Hobi & LifeStyle</h5>
+               <div class="content_nav_hobilifestyle">
+                  <p>Manajemen Keuangan</p>
+                  <p>Olahraga</p>
+                  <p>Musik</p>
+                  <p>Hidup Sehat</p>
+                  <P>Kesehatan Mental</P>
+                  <span>Coomingsoon...</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="upper_wrapper">
+         <!--hero section-->
+         <div class="text_section">
+            <div class="left">
+               <h6>
+                  Merdeka Belajar Kampus Merdeka (MBKM)
+               </h6>
+               <h1>
+                  Ayo TemuIn Mentor yang Kamu Inginkan!
+               </h1>
+               <h3>
+                  Kamu juga bisa menjadi mentor loh!
+               </h3>
+
+               <p>
+                  Segera daftarkan diri anda sekarang di Web TemuIn Mentoring dengan sistem mentoring yang berkualitas.
+               </p>
+               <a href="../DaftarMentee/daftar_mentee.html"><button class="btn_daftar"> Daftar </button></a>
+            </div>
+            <div class="right">
+               <img src="../Image/il education.svg" alt="education">
+            </div>
+         </div>
+      </div>
+
+      <div class="bg_menjadi_MentorMentee">
+         <section class="menjadiMentorMentee_section">
+            <div class="daftar_mentor">
+               <div class="content_mentor">
+                  <img src="../Image/il Mnjdi Mentor.svg" alt="menjadi mentor">
+                  <h4>
+                     Mentor
+                  </h4>
+                  <p>
+                     Ayo berikan manfaat ke banyak orang dengan ilmu dan pengalamanmu yang berkualitas. Buat sistem
+                     mentoringmu yang terstruktur dan jadikan muridmu menjadi yang terbaik dibidangnya
+                  </p>
+               </div>
+               <div class="btn_mentor">
+                  <a href="../DaftarMentor/daftar_mentor.html"><button class="btn_menjadiMentor">Menjadi Mentor</button></a>
+               </div>
+            </div>
+            <div class="daftar_mentee">
+               <div class="content_mentee">
+                  <img src="../Image/il Mnjdi Mentee.svg" alt="menjadi Mentee">
+                  <h4>
+                     Mentee
+                  </h4>
+                  <p>
+                     TemuIn Mentor mu dari berbagai macam bidang yang tersedia mulai dari siswa, mahasiswa, karir dan
+                     hobi&lifestyle. Ayo jadi yang terbaik di bidangmu.
+                  </p>
+               </div>
+               <div class="btn_mentee">
+                  <a href="../DaftarMentee/daftar_mentee.html"><button class="btn_menjadiMentee">Menjadi Mentee</button></a>
+               </div>
+            </div>
+         </section>
+         <div>
+            <img class="elemen1" src="../Image/Element1.png" alt="elemen 1">
+         </div>
+      </div>
+
+      <!--Program Mentoring-->
+      <div class="program_mentoring">
+         <h2 class="title">
+            PROGRAM MENTORING
+         </h2>
+         <div class="siswa_sd">
+            <img src="../Image/il siswa SD.svg" alt="siswa sd" class="on">
+            <img src="../Image/il siswa SMP.svg" alt="siswa smp" class="off">
+            <img src="../Image/il siswa SMA.svg" alt="siswa sma" class="off">
+            <div class="content_siswaSD">
+               <h3> SISWA </h3>
+               <p class="p1">
+                  Siswa adalah salah satu komponen manusiawi yang menempati posisi sentral dalam proses belajar mengajar
+                  dimana di dalam proses belajar mengajar, siswa sebagai pihak yang ingin meraih cita-cita, memiliki
+                  tujuan dan kemudian ingin mencapainya secara optimal. Raih cita-cita dan tujuanmu
+               </p>
+               <div class="categori_kelas">
+                  <h2 class="active">SD</h2>
+                  <h2>SMP</h2>
+                  <h2>SMA</h2>
+               </div>
+               <div class="categori_SD on">
+                  <p>Matematika</p>
+                  <p>Bahasa Indonesia</p>
+                  <p>IPA</p>
+                  <P>Akademik</P>
+                  <p>Non-Akademik</p>
+                  <span>Coomingsoon...</span>
+               </div>
+               <div class="categori_SMP off">
+                  <p>Matematika</p>
+                  <p>Bahasa Inggris</p>
+                  <p>Bahasa Indonesia</p>
+                  <p>IPA</p>
+                  <P>Akademik</P>
+                  <p>Non-Akademik</p>
+                  <span>Coomingsoon...</span>
+               </div>
+               <div class="categori_SMA off">
+                  <p>Matematika</p>
+                  <p>Bahasa Inggris</p>
+                  <p>Bahasa Indonesia</p>
+                  <p>Ekonomi</p>
+                  <p>Akutansi</p>
+                  <p>Kimia</p>
+                  <p>Fisika</p>
+                  <p>Biologi</p>
+                  <p>Akademik</p>
+                  <p>Non-Akademik</p>
+                  <p>Kedinasan</p>
+                  <p>OTW Kuliah</p>
+                  <span>Coomingsoon...</span>
+               </div>
+            </div>
+         </div>
+
+         <div class="mahasiswa">
+            <div class="content_mahasiswa">
+               <h3> MAHASISWA </h3>
+               <p class="p1"> Mahasiswa adalah seseorang yang sedang menempuh pendidikan di suatu universitas, sekolah
+                  tinggi, hingga akademi. TemuIn Mentor mu untuk membantu tugas kuliahmu dan persiapankan diri untuk
+                  dunia karir.
+               </p>
+               <div class="categori_mahasiswa">
+                  <p>Teknik</p>
+                  <p>Teknologi Informasi</p>
+                  <p>Kehutanan</p>
+                  <p>Pertanian</p>
+                  <P>Sosial</P>
+                  <p>Ekonomi & Bisnis</p>
+                  <p>Kesehatan</p>
+                  <p>Psikolog</p>
+                  <p>Science</p>
+                  <p>Matematika</p>
+                  <p>Akademik</p>
+                  <p>Non-Akademik</p>
+                  <span>Coominsoon...</span>
+               </div>
+            </div>
+            <img class="il_mahasiswa" src="../Image/il siswa Mahasiswa.svg" alt="mahasiswa">
+         </div>
+         <div class="karir">
+            <img src="../Image/il Karir.png" alt="karir">
+            <div class="content_karir">
+               <h3> KARIR </h3>
+               <P class="p1">
+                  Karir adalah perkembangan dan kemajuan baik pada kehidupan, pekerjaan atau jabatan seseorang. Karier
+                  adalah cita-cita, ambisi, dan tujuan hidup jangka panjang yang dimiliki seseorang dengan menekuni
+                  suatu bidang. Tingkatkan skill dan pengalamanmu untuk mencapai karir yang lebih tinggi. </P>
+               <div class="categori_karir">
+                  <p>Bisnis</p>
+                  <p>Sales Marketing</p>
+                  <p>Teknologi dan Sofware</p>
+                  <p>Desain</p>
+                  <P>Multimedia</P>
+                  <p>Finance</p>
+                  <p>Data Science</p>
+                  <span>Coomingsoon...</span>
+               </div>
+            </div>
+         </div>
+         <div class="hobilifestyle">
+            <div class="content_hobilifestyle">
+               <h3> HOBI & LIFESTYLE </h3>
+               <p class="p1"> Mahasiswa adalah seseorang yang sedang menempuh pendidikan di suatu universitas, sekolah
+                  tinggi, hingga akademi. TemuIn Mentor mu untuk membantu tugas kuliahmu dan persiapankan diri untuk
+                  dunia karir.
+               </p>
+               <div class="categori_hobilifestyle">
+                  <p>Manajemen Keuangan</p>
+                  <p>Olahraga</p>
+                  <p>Musik</p>
+                  <p>Hidup Sehat</p>
+                  <P>Kesehatan Mental</P>
+                  <span>Coomingsoon...</span>
+               </div>
+            </div>
+            <img class="il_hobilifestyle" src="../Image/il hobi & lifestyle.svg" alt="mahasiswa">
+         </div>
+      </div>
+
+      <!-- Keunggulan-->
+      <div id="tk" class="bg_tentang_kami">
+         <div class="tentang_kami">
+            <div class="desc_temuin">
+               <h1>
+                  TemuIn Mentor
+               </h1>
+               <p>
+                  Merupakan platform edukasi online untuk memberi wadah bagi para mentor dan juga mentee dalam membuat dan
+                  mencari mentoring sesuai dengan bidang ilmu yang diinginkan dalam menyelesaikan suatu permasalahan mulai
+                  dari siswa, mahasiswa, karir dan juga hobi&lifestyle. Melalui TemuIn Mentor siapapun bisa belajar materi
+                  pembelajaran yang diinginkan dibimbing oleh mentor yang ahli di bidangnya.
+               </p>
+            </div>
+            <div class="desc_keunggulan">
+               <h1>
+                  Keunggulan temuin Mentor
+               </h1>
+               <ul>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Jenis mentoring yang tersedia : kelas mentoring online dan mentoring 1-on-1 secara online, offline maupun hybrid</li>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Pilihan bidang mentoring sangat luas</li>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Dapat melihat materi secara gratis yang disediakan mentor</li>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Fleksiblitas waktu pada jenis Mentoring 1-on-1 </li>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Kebebasan mentor untuk membuat sistem mentoringnya tanpa melanggar peraturan yang berlaku merugikan murid mentor.</li>
+                  <li><img src="../Image/centang hijau.svg" alt="centang hijau">Mentee dapat memilih program mentoring sesuai dengan budget dan bidang mentoring yang diinginkan.</li>
+               </ul>
+            </div>
+         </div>
+         <div class="desc_content">
+            <h1> Supporting </h1>
+            <div class="logo">
+               <img src="../Image/Kampus merdeka.png" alt="kampus merdeka"></span>
+               <img src="../Image/Infinite Learning.png" alt=""></span>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- Footer -->
+      <div id="kontak" class="bg_footer">
+         <footer class="footer_wrapper">
+            <div class="footer_content">
+               <a href="#"><img src="../Image/LogoFooter.png" alt="logo"></a>
+               <div class="address">
+                  <h5>Alamat</h5>
+                  <p>2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
+               </div>
+               <div class="nav_foot">
+                  <h5>Navigasi</h5>
+                  <div class="content_nav_foot">
+                     <a href="#"><p>Beranda</p></a>
+                     <a href="../HalamanProgramanMentoring/program_mentoring.html"><p>Program Mentoring</p></a>
+                     <a href="#tk"><p>Tentang Kami</p></a>
+                     <a href="#kontak"><p>Kontak</p></a>
+                     <p>Persyaratan dan Kebijakan Privasi</p>
+                  </div>
+               </div>
+               <div class="contact_us">
+                  <h5>Hubungi Kami</h5>
+                  <div class="content_contact_us">
+                     <div class="phone">
+                        <i class='bx bx-phone-call bx-md'></i>
+                        <p>08237213648</p>
+                     </div>
+                     <div class="whatsapp">
+                        <i class='bx bxl-whatsapp bx-md'></i>
+                        <p>08237213648</p>
+                     </div>
+                     <div class="email">
+                        <i class='bx bxl-gmail bx-md'></i>
+                        <p>temuinmentor@gmail.com</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="social_media">
+                  <i class='bx bxl-facebook-square bx-lg'></i>
+                  <i class='bx bxl-twitter bx-lg'></i>
+                  <i class='bx bxl-instagram bx-lg'></i>
+                  <i class='bx bxl-linkedin-square bx-lg'></i>
+               </div>
+            </div>
+         </footer>
+      </div>
+      <div class="bg_footer_copyright">
+         <p>Copyright © 2022 TemuInMentor. All rights reserved.</p>
+      </div>
+   </div>
+
+
+   <script src="../ProgramMentoring.js"></script>
+</body>
+
+</html>

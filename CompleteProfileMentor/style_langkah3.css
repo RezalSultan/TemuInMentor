@@ -17,7 +17,11 @@ body {
 	height: 100%;
 	left: 167px;
 	top: 0px;	
+<<<<<<< HEAD
 	background: linear-gradient(90deg, #FAFAFA -7.05%, #9DD6FF 18.7%, #9DD6FF 81.22%, #FAFAFA 108.25%);
+=======
+	background-color: #afaaaa;
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 }
 
 .wrapper {
@@ -59,7 +63,10 @@ form {
 	align-self: flex-start;
 	margin-top: 16px;
 	padding: 0px;
+<<<<<<< HEAD
 	gap: 8px;
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 }
 
 .medsos1, .medsos2, .medsos3, .medsos4{
@@ -84,8 +91,13 @@ form {
     width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
+<<<<<<< HEAD
 	background: #F8FAFC;
 	border: 1px solid #003d3f;
+=======
+	background: #e5fcf6;
+	border: 2px solid #003d3f;
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b
 	border-radius: 10px;
 	font-family: inter;
 	font-size: 16px;
@@ -159,7 +171,10 @@ form {
 	border-radius: 10px;
 	cursor: pointer;
 }
+<<<<<<< HEAD
 
 a{
 	text-decoration: none;
 }
+=======
+>>>>>>> 690720ecc1300c54b9598c333aa12792aa3af17b

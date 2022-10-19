@@ -1,0 +1,786 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+   font-family: "inter", "montserrat";
+	color: #18181b;
+	/* border: 1px solid red; */
+}
+
+body {
+	background-color: #fafafa;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+h1 {
+	font-family: "montserrat";
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: "montserrat";
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-family: "montserrat";
+	font-size: 28px;
+	font-weight: 600;
+}
+
+h4 {
+	font-family: "montserrat";
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h5 {
+	font-family: "montserrat";
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h6 {
+	font-family: "montserrat";
+	font-size: 16px;
+	font-weight: 600;
+}
+
+a {
+   text-decoration: none;
+   display: inline-block;
+}
+
+.navbar_wrapper {
+	width: 100%;
+	box-shadow: 0px 3px 7px rgba(24, 24, 27, 0.15);
+   position: fixed;
+   top: 0;
+   z-index: 9999;
+   background-color: #fafafa;
+}
+
+.navbar_content,
+.nav_content_wrapper,
+.nav_text,
+.nav_button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.navbar_content {
+	padding: 22px 40px;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1280px;
+}
+
+.navbar_content img {
+	cursor: pointer;
+}
+
+.nav_content_wrapper {
+	align-items: center;
+	gap: 48px;
+}
+
+.nav_text {
+	gap: 16px;
+	font-family: "Inter";
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.nav_text .aktif{
+   background-color: #e5fcf6;
+}
+
+.nav_text p {
+	padding: 13px;
+	border-radius: 10px;
+}
+
+.nav_text_pm {
+	display: flex;
+	align-items: center;
+	padding: 0px 10px 0px 13px;
+	height: 47px;
+	border-radius: 10px;
+}
+
+.nav_text .active{
+   background-color: #e5fcf6;
+}
+
+.nav_text_pm i.active {
+   transform: rotate(90deg);
+}
+
+.nav_text_pm i {
+	transform: translateY(8%);
+}
+
+.nav_text p:hover,
+.nav_text_pm:hover {
+	background-color: #e5fcf6;
+	cursor: pointer;
+}
+
+
+.nav_button {
+	gap: 24px;
+}
+
+.button_masuk button,
+.button_daftar button {
+	padding: 13px 10px;
+	width: 100px;
+	height: 45px;
+	background: #fafafa;
+	box-shadow: 3px 5px 5px rgba(24, 24, 27, 0.15);
+	border-radius: 10px;
+	border: none;
+	font-family: "Inter";
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.button_masuk button {
+	background-color: #fafafa;
+	color: #0a9396;
+}
+
+.button_daftar button {
+	background-color: #0a9396;
+	color: #f8fafc;
+}
+
+.button_daftar button:hover {
+	background-color: #00d9de;
+}
+
+/* dropdown program mentoring  */
+.wrapper_search_nav_pm {
+	width: 100%;
+   position: fixed;
+   z-index: 9;
+   margin-top: -56px;
+   background-color: #fafafa;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+   border-radius: 0px 0px 10px 10px;
+}
+
+.toggle {
+   display: none;
+}
+
+.search_nav_pm {
+   display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+   justify-content: center;
+   padding: 32px 40px;
+	margin: 0 auto;
+	width: 1280px;
+   gap: 40px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir,
+.search_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.search_nav_siswa,
+.search_nav_mahasiswa,
+.search_nav_karir {
+   width: 280px;
+   flex-wrap: wrap;
+}
+
+.search_siswa {
+   display: flex;
+   gap: 40px;
+}
+
+.search_siswa h6{
+   color: #a1a1aa;
+   cursor: pointer;
+}
+
+.search_siswa h6.active{
+   color: #18181b;
+}
+
+.search_nav_pm p{
+   display: flex;
+   align-self: flex-start;
+   padding: 3px 5px;
+   border-radius: 2px;
+   font-family: "inter";
+   font-size: 14px;
+   cursor: pointer;
+}
+
+.search_nav_pm p:hover{
+   background-color: #0a9396;
+   color: #F8FAFC;
+}
+
+.search_nav_pm span {
+   padding: 3px 5px;
+   color: #a1a1aa;
+}
+
+.content_nav_SD,
+.content_nav_SMP,
+.content_nav_karir,
+.content_nav_hobilifestyle {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.content_nav_mahasiswa,
+.content_nav_SMA {
+   display: flex;
+   gap: 16px;
+}
+
+.content_nav_mahasiswa .left_mahasiswa,
+.content_nav_mahasiswa .right_mahasiswa,
+.content_nav_SMA .left_SMA,
+.content_nav_SMA .right_SMA{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.off {
+   display: none;
+}
+
+.on {
+   display: flex;
+}
+
+/* ------------------------------- */
+
+/* hero section  */
+
+.upper_wrapper {
+	display: flex;
+	width: 100%;
+   margin-top: calc(88px + 56px);
+}
+
+.text_section {
+	display: flex;
+	width: 100%;
+	align-items: center;
+   justify-content: space-between;
+}
+
+.text_section .left {
+	margin-left: 100px;
+   width: 30%;
+   transform: translateY(-80px);
+}
+
+.text_section .left h6 {
+	font-family: "Inter";
+	font-weight: 500;
+	font-size: 16px;
+	color: #003d3f;
+   margin-bottom: 4px;
+}
+
+.text_section .left h1 {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #0a9396;
+   margin-bottom: 8px;
+}
+
+.text_section .left h3 {
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	color: #18181b;
+	margin-bottom: 16px;
+}
+
+.text_section .left p {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #52525b;
+	margin-bottom: 24px;
+}
+
+.title {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 34px;
+	color: #18181b;
+	text-shadow: 2px 3px 0px rgba(24, 24, 27, 0.3);
+	text-align: center;
+	margin-top: 40px;
+   margin-bottom: -40px;
+}
+
+.btn_daftar,
+.btn_menjadiMentor,
+.btn_menjadiMentee {
+	padding: 14px 0;
+	width: 200px;
+	height: 48px;
+	background: #0a9396;
+	box-shadow: 3px 5px 5px rgba(24, 24, 27, 0.15);
+	border-radius: 10px;
+	border: none;
+	font-family: "Inter";
+	font-weight: 600;
+	font-size: 16px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	color: #f8fafc;
+   cursor: pointer;
+}
+
+.btn_daftar:hover,
+.btn_menjadiMentor:hover,
+.btn_menjadiMentee:hover {
+   background-color: #00d9de;
+}
+
+.btn_mentor,
+.btn_mentee {
+	position: absolute;
+	padding: 0px;
+	top: 475px;
+	left: 90px;
+}
+
+.menjadiMentorMentee_section {
+	display: flex;
+	gap: 80px;
+	justify-content: center;
+   z-index: 2;
+}
+
+.bg_menjadi_MentorMentee {
+	width: 100%;
+	height: 100%;
+	background-color: #f8fafc;
+   margin-top: -40px;
+}
+
+.daftar_mentor,
+.daftar_mentee {
+	width: 367px;
+	height: 500px;
+	background: #f8fafc;
+	border-radius: 10px;
+	box-shadow: 5px 7px 5px rgba(0, 0, 0, 0.15);
+	padding: 24px;
+	position: relative;
+   z-index: 2;
+}
+
+.content_mentor,
+.content_mentee {
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+}
+
+.content_mentee img{
+   width: 252px;
+   height: 226px;
+   align-self: center;
+}
+
+.content_mentor img,
+.content_mentee img{
+   margin-bottom: 16px;
+} 
+
+.content_mentor p,
+.content_mentee p {
+	font-family: "inter";
+	margin-top: 24px;
+	font-size: 16px;
+   line-height: 25px;
+}
+
+.elemen1 {
+	position: relative;
+	margin-top: -280px;
+	z-index: 0;
+}
+
+/*program mrntoring*/
+
+.program_mentoring {
+	position: relative;
+}
+
+.program_mentoring h2 {
+	align-items: center;
+	font-family: "Montserrat";
+}
+
+.program_mentoring h3 {
+	align-items: center;
+	font-family: "Montserrat";
+	margin-bottom: 8px;
+	text-shadow: 2px 3px 0px rgba(24, 24, 27, 0.3);
+}
+
+.siswa_sd,
+.karir {
+	display: flex;
+	align-items: center;
+   justify-content: space-between;
+   padding: 56px 0;
+}
+
+.content_karir {
+	margin-right: 100px;
+	width: 40%;
+}
+
+.content_siswaSD {
+   margin-right: 100px;
+	width: 40%;
+   transform: translateY(-24px);
+}
+
+.content_siswaSD p.p1,
+.content_karir p.p1,
+.content_mahasiswa p.p1,
+.content_hobilifestyle p.p1 {
+	font-family: "Inter";
+   margin-bottom: 40px;
+   line-height: 25px;
+   color: #52525B;
+   font-weight: 400px;
+}
+
+.categori_kelas {
+	display: flex;
+   justify-content: start;
+	gap: 88px;
+}
+
+.categori_kelas h2 {
+	color: #a1a1aa;
+   cursor: pointer;
+}
+
+.categori_kelas .active{
+   color: #18181b;
+}
+
+.siswa_sd .on{
+   display: flex;
+}
+
+.siswa_sd .off{
+   display: none;
+}
+
+.categori_SD,
+.categori_SMP,
+.categori_SMA,
+.categori_karir,
+.categori_mahasiswa,
+.categori_hobilifestyle {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
+	width: 100%;
+	margin-top: 8px;
+}
+
+.categori_SD,
+.categori_SMP,
+.categori_SMA {
+   height: 100px;
+}
+
+.categori_SD p,
+.categori_SMP p,
+.categori_SMA p,
+.categori_karir p,
+.categori_mahasiswa p,
+.categori_hobilifestyle p {
+	padding: 10px;
+	border: 2px solid #52525b;
+	box-sizing: border-box;
+	border-radius: 10px;
+	font-family: "Inter";
+   font-weight: bold;
+	font-size: 16px;
+	color: #52525b;
+	cursor: pointer;
+}
+
+.categori_SD p:hover,
+.categori_SMP p:hover,
+.categori_SMA p:hover,
+.categori_karir p:hover,
+.categori_mahasiswa p:hover,
+.categori_hobilifestyle p:hover {
+	border: 2px solid #00d9de;
+	color: #00d9de;
+}
+
+.categori_SD span,
+.categori_SMP span,
+.categori_SMA span,
+.categori_karir span,
+.categori_mahasiswa span,
+.categori_hobilifestyle span {
+	font-family: "Inter";
+	font-weight: 600px;
+	font-size: 16px;
+	color: #a1a1aa;
+}
+
+.mahasiswa,
+.hobilifestyle {
+   display: flex;
+	align-items: center;
+   justify-content: space-between;
+   padding: 56px 0;
+	background-color: #e5fcf6;
+}
+
+.content_mahasiswa,
+.content_hobilifestyle {
+	margin-left: 100px;
+	width: 40%;
+}
+
+
+/* keunggulan */
+
+.bg_tentang_kami {
+	padding: 80px;
+	position: relative;
+	display: flex;
+   flex-direction: column;
+	justify-content: center;
+   align-items: center;
+}
+
+.tentang_kami {
+   display: flex;
+   gap: 80px;
+   padding: 0 40px;
+   width: 1280px;
+}
+
+.desc_temuin {
+	width: 50%;
+}
+
+.desc_temuin h1{
+   margin-bottom: 16px;
+}
+
+.desc_keunggulan {
+	width: 50%;
+}
+
+.desc_keunggulan ul li {
+   margin-top: 8px;
+   list-style-type: none;
+   display: flex;
+   gap: 8px;
+}
+
+.desc_keunggulan h1{
+   margin-bottom: 8px;
+}
+
+
+.desc_temuin p,
+.desc_keunggulan li {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.desc_content {
+	margin-top: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.desc_content .logo {
+   margin-top: 40px;
+   display: flex;
+   gap: 80px;
+   align-items: center;
+}
+
+.desc_content .logo img:nth-child(1){
+   width: 100px;
+   height: 53.3px;
+}
+
+.desc_content .logo img:nth-child(2){
+   width: 100px;
+   height: 95.18px;
+}
+
+/* footer */
+
+.bg_footer {
+	display: block;
+	position: relative;
+	height: 296px;
+	width: 100%;
+	background-color: #003d3f;
+}
+
+.footer_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 40px;
+	height: 100%;
+	width: 1280px;
+}
+
+.footer_content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 40px;
+}
+
+.address,
+.nav_foot,
+.contact_us {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	gap: 16px;
+}
+
+.address h5,
+.nav_foot h5,
+.contact_us h5 {
+	color: #f8fafc;
+}
+
+.address {
+	width: 176px;
+}
+
+.address p {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #cbd5e1;
+}
+
+.nav_foot {
+	width: 199px;
+}
+
+.content_nav_foot {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.content_nav_foot p {
+	font-family: "Inter";
+	font-weight: 600;
+	font-size: 16px;
+	color: #f8fafc;
+	cursor: pointer;
+}
+
+.content_contact_us {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.content_contact_us i {
+	color: #0a9396;
+}
+
+.content_contact_us p {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 16px;
+	color: #cbd5e1;
+}
+
+.phone,
+.whatsapp,
+.email {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	cursor: pointer;
+}
+
+.social_media {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 16px;
+	width: 112px;
+}
+
+.social_media i {
+	color: #0a9396;
+}
+
+.bg_footer_copyright {
+	background-color: #18181b;
+	text-align: center;
+	width: 100%;
+	height: 24px;
+}
+
+.bg_footer_copyright p {
+	font-family: "Inter";
+	font-weight: 400;
+	font-size: 12px;
+	color: #f8fafc;
+	padding: 4px 0;
+}
