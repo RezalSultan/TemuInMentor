@@ -19,7 +19,6 @@ body {
 	left: 167px;
 	top: 0px;	
 	background: linear-gradient(90deg, #FAFAFA -7.05%, #9DD6FF 18.7%, #9DD6FF 81.22%, #FAFAFA 108.25%);
-	background-color: #afaaaa;
 }
 
 .container span{
@@ -138,18 +137,12 @@ form {
 }
 
 .input_pekerjaan input, .input_bidang input{
-}
-
-.input_pekerjaan input, .input_bidang input{
 	width: 400px;
 	height: 45px;
 	padding: 0 24px 0 8px;
 	background: #F8FAFC;
 	border: 1px solid #003d3f;
-	background: #e5fcf6;
-	border: 2px solid #003d3f;
 	border-radius: 10px;
-	
 	font-family: inter;
 	font-size: 16px;
 	font-weight: 400;
@@ -165,7 +158,6 @@ form {
 	width: 824px;
 	height: 72px;
 	margin-top: 16px;
-	
 }
 
 .input_deskripsi {
@@ -182,10 +174,7 @@ form {
 	padding: 40px 10px;
 	background: #F8FAFC;
 	border: 1px solid #003d3f;
-	background: #e5fcf6;
-	border: 2px solid #003d3f;
 	border-radius: 10px;
-	
 	font-family: inter;
 	font-size: 16px;
 	font-weight: 400;
