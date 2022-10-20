@@ -221,6 +221,10 @@ a {
    cursor: pointer;
 }
 
+.search_nav_pm h5{
+   color: #0a9396;
+}
+
 .search_nav_pm p:hover{
    background-color: #0a9396;
    color: #F8FAFC;

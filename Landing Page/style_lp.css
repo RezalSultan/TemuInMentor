@@ -224,6 +224,10 @@ a {
    color: #18181b;
 }
 
+.search_nav_pm h5{
+   color: #0a9396;
+}
+
 .search_nav_pm p{
    display: flex;
    align-self: flex-start;

@@ -202,7 +202,7 @@ form label {
 }
 
 form i {
-	color: #18181b;
+	color: #003d3f;
 }
 
 .addition {
@@ -329,7 +329,7 @@ form i {
 	color: #18181b;
 }
 
-.link_masuk span {
+.link_masuk span a{
 	font-family: "Inter";
 	font-weight: 700;
 	font-size: 14px;

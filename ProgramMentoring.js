@@ -82,13 +82,3 @@ cariSiswa.forEach(function(el, i){
       }
    })
 })
-
-// masuk ke profile justin lumbin
-const justinLubin = document.querySelectorAll(".second");
-
-justinLubin.forEach(function(el){
-   el.addEventListener("click", function(){
-      el.setAttribute("href", "../PM_ProfileMentoring/pm_profile_mentoring.html")
-      el.getAttribute("href")
-   })
-})
