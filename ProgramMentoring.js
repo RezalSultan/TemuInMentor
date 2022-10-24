@@ -60,25 +60,61 @@ cariSiswa.forEach(function(el, i){
 
       if ( i == "0"){
          SD.classList.replace("off", "on")
+         SD.style.transform = "translateX(0)"
          SMP.classList.replace("on", "off")
+         SMP.style.transform = "translateX(0)"
          SMA.classList.replace("on", "off")
+         SMA.style.transform = "translateX(0)"
          gambarSD.classList.replace("off", "on")
          gambarSMP.classList.replace("on", "off")
          gambarSMA.classList.replace("on", "off")
+
       }else if (i== "1") {
          SD.classList.replace("on", "off")
+         SD.style.transform = "translateX(-100%)"
          SMP.classList.replace("off", "on")
+         SMP.style.transform = "translateX(-100%)"
          SMA.classList.replace("on", "off")
+         SMA.style.transform = "translateX(-100%)"
          gambarSD.classList.replace("on", "off")
          gambarSMP.classList.replace("off", "on")
          gambarSMA.classList.replace("on", "off")
       }else if (i=="2"){
          SD.classList.replace("on", "off")
+         SD.style.transform = "translateX(-200%)"
          SMP.classList.replace("on", "off")
+         SMP.style.transform = "translateX(-200%)"
          SMA.classList.replace("off", "on")
+         SMA.style.transform = "translateX(-200%)"
          gambarSD.classList.replace("on", "off")
          gambarSMP.classList.replace("on", "off")
          gambarSMA.classList.replace("off", "on")
       }
    })
 })
+
+const read = document.getElementsByClassName("read")[0];
+const lengkap = document.getElementsByClassName("deskripsi-lengkap")[0];
+
+read.addEventListener("click", function(){
+   if ( read.innerText === "singkatkan"){
+      read.innerText = "selengkapnya..."
+      lengkap.classList.add("deskripsi-lengkap-off")
+   }else {
+      read.innerText = "singkatkan"
+      lengkap.classList.remove("deskripsi-lengkap-off")
+   }
+})
+
+// const read = document.getElementsByClassName("read")[0];
+// const lengkap = document.getElementsByClassName("deskripsi-lengkap-off")[0];
+
+// read.addEventListener("click", function(){
+//    if ( lengkap.className == "deskripsi-lengkap-off"){
+//       read.innerText = "singkatkan"
+//       lengkap.classList.replace("deskripsi-lengkap-off", "deskripsi-lengkap")
+//    }else {
+//       read.innerText = "selengkapnya..."
+//       lengkap.classList.replace("deskripsi-lengkap", "deskripsi-lengkap-off")
+//    }
+// })
