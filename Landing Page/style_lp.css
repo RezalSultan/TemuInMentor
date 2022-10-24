@@ -512,15 +512,6 @@ a {
    color: #18181b;
 }
 
-.siswa_sd .on{
-   transition: all ease-in-out .5s;
-   visibility: visible;
-}
-
-.siswa_sd .off{
-   transition: all ease-in-out .5s;
-   visibility: hidden;
-}
 
 .categori {
    display: flex;
@@ -546,6 +537,7 @@ a {
 .categori_SMP,
 .categori_SMA {
    height: 100px;
+   transition: all ease-in-out .5s;
 }
 
 .categori_SD p,
